@@ -1,6 +1,7 @@
 ***Hands-on #4: MapReduce : Movie Script Analysis***
 
 Setup and Execution
+
 *1. Start the Hadoop Cluster*
 Run the following command to start the Hadoop cluster:
 **docker compose up -d**
