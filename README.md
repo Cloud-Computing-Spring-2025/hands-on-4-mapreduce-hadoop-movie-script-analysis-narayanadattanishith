@@ -31,6 +31,7 @@ Navigate to the Hadoop directory:
 *7. Set Up HDFS*
 Create a folder in HDFS for the input dataset:
 **hadoop fs -mkdir -p /input/dataset**
+
 Copy the input dataset to the HDFS folder:
 **hadoop fs -put ./movie_dialogues.txt /input/dataset**
 
@@ -47,10 +48,13 @@ To view the output of your MapReduce job, use:
 
 *10. Copy Output from HDFS to Local OS*
 To copy the output from HDFS to your local machine:
+
 *1.	Use the following command to copy from HDFS:*
 **hdfs dfs -get /output /opt/hadoop-3.2.1/share/hadoop/mapreduce/**
+
 *2.	use Docker to copy from the container to your local machine:*
 **exit**
+
 *3.	Commit and push to your repo so that we can able to see your output*
 **docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output/ output/**
 
